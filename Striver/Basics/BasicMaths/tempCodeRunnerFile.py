@@ -1,0 +1,1 @@
+sol.isprime(5)
