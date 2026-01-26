@@ -1,0 +1,1 @@
+sol.Fibonacci(6)
