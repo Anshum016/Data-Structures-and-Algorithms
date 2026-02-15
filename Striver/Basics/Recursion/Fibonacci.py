@@ -8,4 +8,3 @@ class solution:
 sol = solution()
 print(sol.Fibonacci(6))    
     
-
