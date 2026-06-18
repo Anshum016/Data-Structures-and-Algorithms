@@ -8,7 +8,7 @@ class Solution:
 
             while j >= 0 and arr[j] > key:  # shift larger elements one step right
                 arr[j + 1] = arr[j]
-                j -= 1
+                j -= 1           
 
             arr[j + 1] = key           # insert key into its correct position
 
