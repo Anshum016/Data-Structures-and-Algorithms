@@ -1,20 +1,26 @@
-def BinarSearch(nums,target):
-    n = len(nums)
-    left = 0
-    right = n - 1
-    while left <= right:
-        mid = (left + right) // 2
-        if nums[mid] == target:
-            return mid
-        elif mid  < target:
-            left = mid + 1
-        else: 
-            right = mid - 1
-    return -1
+class Solution(object):
+    def binary_Search(self,nums ,target ):
+        n = len(nums)
+        l = 0
+        r = n-1
 
-nums = [1, 2, 3, 4, 5]
-k = 3
-print(BinarSearch(nums,k))
+        while l <= r:
+            mid = (l + r) // 2
+
+            if nums[mid] == target:
+                return mid
+            elif mid < target:
+                l = mid + 1
+            elif mid > target:
+                r = mid - 1
+
+        return -1
+
+sol = Solution()
+nums = [-1,0,3,5,9,12]
+target = 9
+answer  = sol.binary_Search(nums,target)     
+print(answer)       
 
 
 
